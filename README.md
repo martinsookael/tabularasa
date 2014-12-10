@@ -1,4 +1,4 @@
-Blank Famo.us-Angular + Express + Gulp (livereload) + Heroku + Bower + Moment + jQuery + Bootstrap
+Blank Express + jQuery + Animate.css + Director + Bootstrap + Moment + Gulp (livereload) + Bower + Heroku  
 ===================
 
 
@@ -8,20 +8,21 @@ This is a boilerplate for beginning a new Single Page Application with the compo
 INSTALLATION AND STARTING UP
 ===================  
 
-(Assuming you have everything else until nodemon/node installed)  
+(Assuming you have everything else until node installed)  
 
+Install npm and bower things:  
 ```
 npm install  
 cd public  
 bower install  
 ```  
 
-Select any 1.3.0 option:  
-angular#~1.3.0 which resolved to 1.3.0 and is required"
+Run Gulp:  
 ```
 gulp  
 ```  
-(other terminal)  
+
+Run the server:  
 ```
 nodemon app.js
 ```  
@@ -29,8 +30,18 @@ nodemon app.js
 Go to: http://localhost:5000/
 
 
+INSTALLATION 2  
+
+I've created a fancy shortcut for .bash_profile.
+It does most of the things from INSTALLATION 1 automatically:  
+
+```
+alias initio='git clone git@github.com:martinsookael/tabularasa.git .;git remote remove origin; npm install; cd public; b install;'
+
+```
+  
 ABOUT  
- ===================  
+===================  
 
 
 EXPRESS:  
@@ -51,9 +62,11 @@ brings media queries to IE 6-8
 HTML5SHIV  
 brings HTML5 to IE  
 
-JQUERY + BOOTSTRAP + ANGULAR + ANGULAR ROUTE  
+JQUERY + BOOTSTRAP  
 These guys do what they've always done.  
 As a side note - Bootstrap also does a CSS reset.  
 
-FAMO.US + ANGULAR
-Promises to bring animations at the level of native apps to webapps.
+ANIMATE.CSS  
+Provides simple animations through CSS.
+
+DIRECTOR
